@@ -194,7 +194,7 @@ void ClientSocket::onTextMessageReceived(QString message)
 
     if (!object.find(___CLOSE_APP)->isUndefined())
     {
-        serverSocket->close();
+        serverSocket->close();//1
 
         qApp->exit();
 
